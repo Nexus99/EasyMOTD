@@ -47,7 +47,7 @@ end
 local HTML = vgui.Create("HTML", dframe)
 HTML:SetSize( ScrW(), ScrH() - 150  )
 HTML:SetPos( ScrW() - 1922 , ScrH() / 10.7)
-HTML:OpenURL("www.gworlds.net")
+HTML:OpenURL("www.google.com") --- Your Website Here!
 
 local dbutton = vgui.Create("DButton", dframe)
 dbutton:SetText("")
