@@ -30,21 +30,15 @@ dframe:ShowCloseButton(false)
 dframe.Paint = function()
 	draw.RoundedBox(0, 0, 0, dframe:GetWide(), dframe:GetTall(), colors.back)
 	draw.RoundedBox(0, 0, 0, dframe:GetWide(), 100, colors.head)
-	draw.SimpleText("Welcome to the MOTD Test Server!", "menuHead", dframe:GetWide() / 2, 20, colors.text, TEXT_ALIGN_CENTER)
+	draw.SimpleText("Welcome to SERVER NAME HERE!", "menuHead", dframe:GetWide() / 2, 20, colors.text, TEXT_ALIGN_CENTER)
 	dframe:MoveToFront()
 end
 
 local HTML = vgui.Create("HTML", dframe)
-<<<<<<< HEAD
 HTML:SetSize( ScrW(), ScrH() )
 HTML:Center()
 HTML:SetPos( 0, 100)
 HTML:OpenURL("http://facepunch.com/showthread.php?t=1414515") --- Your Website Here!
-=======
-HTML:SetSize( ScrW(), ScrH() - 100  )
-HTML:SetPos( ScrW() - 1922 , ScrH() / 10.7)
-HTML:OpenURL("www.google.com") --- Your Website Here!
->>>>>>> ad04174be73c3b004e5ce5a5e1db8e44c3211caa
 
 local dbutton = vgui.Create("DButton", dframe)
 dbutton:SetText("")
@@ -59,11 +53,7 @@ end
 
 dbutton.Paint = function()
 	draw.RoundedBox(0, 0, 0, dbutton:GetWide(), dbutton:GetTall(), colors.head);
-<<<<<<< HEAD
 	draw.SimpleText("Close", "menuBtn", dbutton:GetWide() / 2, 10, colors.text, TEXT_ALIGN_CENTER);
-=======
-	draw.SimpleText("Close", "stockBtn", dbutton:GetWide() / 2, 10, colors.text, TEXT_ALIGN_CENTER);
->>>>>>> ad04174be73c3b004e5ce5a5e1db8e44c3211caa
 	dbutton:MoveToFront()
 end
 
@@ -78,6 +68,3 @@ end
 
 concommand.Add("open_menu", menu)
 concommand.Add("close_menu", closemenu)
-
-
-
