@@ -45,12 +45,13 @@ dframe.Paint = function()
 end
 
 local HTML = vgui.Create("HTML", dframe)
-HTML:SetSize( ScrW(), ScrH() - 150  )
+HTML:SetSize( ScrW(), ScrH() - 100  )
 HTML:SetPos( ScrW() - 1922 , ScrH() / 10.7)
 HTML:OpenURL("www.google.com") --- Your Website Here!
 
 local dbutton = vgui.Create("DButton", dframe)
 dbutton:SetText("")
+dbutton:MoveToFront()
 dbutton:SetSize(250, 50)
 dbutton:SetPos(dframe:GetWide() - 250, dframe:GetTall() - 50)
 dbutton.DoClick = function()
@@ -62,8 +63,8 @@ end
 dbutton.Paint = function()
 	draw.RoundedBox(0, 0, 0, dbutton:GetWide(), dbutton:GetTall(), colors.head);
 	draw.SimpleText("Close", "stockBtn", dbutton:GetWide() / 2, 10, colors.text, TEXT_ALIGN_CENTER);
+	dbutton:MoveToFront()
 end
-
 
 end
 
