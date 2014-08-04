@@ -11,4 +11,4 @@ function motdCommand( ply, text, public )
 		return(false)
 	end
 end
-hook.Add("PlayerSay", "ChatCommnad", motdCommand)
+hook.Add("PlayerSay", "ChatCommand", motdCommand)
