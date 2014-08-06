@@ -38,7 +38,7 @@ local function menu()
         HTML:SetSize( ScrW(), ScrH() )
         HTML:Center()
         HTML:SetPos( 0, 100)
-        HTML:OpenURL("http://facepunch.com/showthread.php?t=1414515") --- Your Website Here!
+        HTML:OpenURL(GetConVarString("easy_url")) --- Your Website Here!
  
         local dbutton = vgui.Create("DButton", dframe)
         dbutton:SetText("")
